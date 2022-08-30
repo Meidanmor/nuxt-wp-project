@@ -29,19 +29,6 @@
   @return $number;
 }
 
-@font-face {
-  font-family: 'Rubik Dirt';
-  font-style: normal;
-  font-weight: 400;
-	font-display: swap;
-  src: url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.woff') format('woff'), /* Modern Browsers */
-       url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../static/rubik-dirt/rubik-dirt-v1-latin_hebrew-regular.svg#RubikDirt') format('svg'); /* Legacy iOS */
-}
 
 $t-duration: 500ms;
 $t-delay: 200ms;
