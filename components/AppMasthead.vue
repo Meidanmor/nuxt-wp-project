@@ -41,8 +41,29 @@ export default {
 @import "@/assets/mixins.scss";
 section.hero {
 h2{
-font-size: 70px;
-color: #fff;
+    font-family: 'Rubik Dirt';
+    font-weight: 400;
+    margin: 0 0 40px;
+    letter-spacing: 0px;
+    font-size: 64px;
+    max-width: 700px;
+}
+.heroBTNS {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+a{
+    text-decoration: none;
+    height: 64px;
+    font-size: 18px;
+    width: 200px
+    display: flex;
+    max-width: 49%;
+    font-family: 'ClashDisplay-Medium';
+    align-items: center;
+    justify-content: center;
+}
 }
 }
 section.masthead {
