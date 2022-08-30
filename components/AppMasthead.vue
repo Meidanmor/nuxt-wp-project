@@ -40,6 +40,16 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/mixins.scss";
 section.hero {
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
 h2{
     font-family: 'Rubik Dirt';
     font-weight: 400;
