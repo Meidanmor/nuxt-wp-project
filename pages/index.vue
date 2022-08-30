@@ -8,14 +8,19 @@
     <ul class="theProjects">
     
         <li class="post" v-for="post in posts" :key="post.id">
-              <h3>
-         <span class="text back">{{ post.title.rendered }}</span>
+        <div class="postImgWrap">
          <span class="text front">{{ post.title.rendered }}</span>
-          </h3>
-          <img :src="post.images.large" width="500" height="500"/>
-        <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
+         <span class="text back">{{ post.title.rendered }}</span>
+         <div class="magnetic theImage">
+       <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
           צפייה בפרויקט
 </nuxt-link>
+<div class="hideOverflow">
+          <img :src="post.images.large" width="500" height="500"/>
+          </div>
+          </div>
+        </div>
+
 </li>
 
     </ul>
