@@ -297,4 +297,12 @@ a.readmore {
   right: 108%;
   backface-visibility: hidden;
 }
+@keyframes rotation{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
 </style>
