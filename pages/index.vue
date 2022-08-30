@@ -13,7 +13,9 @@
          <span class="text back">{{ post.title.rendered }}</span>
          <div class="magnetic theImage">
        <nuxt-link :to="`blog/${post.slug}`" class="Open">
+       <span>
           צפייה בפרויקט
+</span>
 </nuxt-link>
 <div class="hideOverflow">
           <img :src="post.images.large" width="500" height="500"/>
@@ -138,6 +140,16 @@ text-align: center;
     background: transparent;
     border-radius: 50%;
     padding: 15px;
+}
+.Open span {
+    width: max-content;
+    display: flex;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-family: 'Rubik Dirt';
+    transition: .5s ease;
 }
 .hideOverflow {
     height: inherit;
