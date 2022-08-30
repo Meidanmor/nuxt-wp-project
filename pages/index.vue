@@ -56,6 +56,101 @@ export default {
 </script>
 
 <style lang="scss">
+section{
+min-height: 100vh;
+}
+section.PROJECTS{
+.max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.theProjects {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 80px;
+}
+ul.theProjects li {
+    position: relative;
+    width: 100%;
+    padding-right: 25%;
+    margin-bottom: 230px;
+    counter-increment: section;
+    height: 600px;
+}
+.postImgWrap {
+    position: relative;
+    align-items: flex-end;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+span.text {
+    -webkit-text-stroke: 1px #fff;
+    font-size: 110px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+span.text.front {
+    z-index: 2;
+}
+span.text.back {
+    z-index: 0;
+color: #fff;
+}
+.theImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s ease;
+    transform-origin: right;
+    transform-style: preserve-3d;
+}
+.Open{
+position: absolute;
+    z-index: 9;
+    bottom: 50px;
+    right: -75px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    animation: 4.5s linear rotation infinite;
+text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    background: transparent;
+    border-radius: 50%;
+    padding: 15px;
+}
+.hideOverflow {
+    height: inherit;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    background: #000;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+}
+}
 .posts {
   display: grid;
   grid-template-columns: 2fr 1fr;
