@@ -1,9 +1,13 @@
 <template>
   <div>
     <app-masthead></app-masthead>
-    <div class="posts">
-      <main>
-        <div class="post" v-for="post in posts" :key="post.id">
+    
+<section class="PROJECTS">
+<div class="max-width">
+
+    <ul class="theProjects">
+    
+        <li class="post" v-for="post in posts" :key="post.id">
               <h3>
          <span class="text back">{{ post.title.rendered }}</span>
          <span class="text front">{{ post.title.rendered }}</span>
@@ -12,10 +16,11 @@
         <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
           צפייה בפרויקט
 </nuxt-link>
-</div>
-      </main>
+</li>
 
-    </div>
+    </ul>
+  </div>
+  </section>
   </div>
 </template>
 
