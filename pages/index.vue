@@ -5,14 +5,11 @@
       <main>
         <div class="post" v-for="post in sortedPosts" :key="post.id">
               <h3>
-        <nuxt-link :to="`blog/${post.slug}`">
-         {{ post.title.rendered }}
-</nuxt-link>
+         <span class="text back">{{ post.title.rendered }}</span>
+         <span class="text front">{{ post.title.rendered }}</span>
           </h3>
-          <small>{{ post.date | dateformat }}</small>
-          <div v-html="post.excerpt.rendered"></div>
         <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
-          Read more ⟶
+          צפייה בפרויקט
 </nuxt-link>
 </div>
       </main>
