@@ -39,7 +39,20 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/mixins.scss";
+.max-width {
+ width: 100%;
+
+}
 section.hero {
+.max-width {
+ max-width: 1400px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
 .stars {
     position: absolute;
     width: 100%;
