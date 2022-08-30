@@ -1,14 +1,38 @@
 <template>
-  <section class="masthead">
-    <h1>{{ tagline }}</h1>
-  </section>
+<section class="masthead hero">
+<div class="stars">
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+<span class="star">★</span>
+</div>
+
+<div class="max-width">
+<h2> 
+{{tagline}}
+</h2>
+
+<div class="heroBTNS">
+<a href="javascript:void(0)" class="magnetic showProjects"> PORTFOLIO </a>
+<a href="javascript:void(0)" class="magnetic startProject"> START NOW </a>
+</div>
+
+</div>
+</section>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      tagline: "Headless WordPress on the JAMstack"
+      tagline: "אנחנו לא בונים אתרים,
+אנחנו מגשימים חלומות!"
     };
   }
 };
