@@ -42,7 +42,9 @@
        url('/rubik-dirt-v1-latin_hebrew/rubik-dirt-v1-latin_hebrew-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/rubik-dirt-v1-latin_hebrew/rubik-dirt-v1-latin_hebrew-regular.svg#RubikDirt') format('svg'); /* Legacy iOS */
 }
-
+body {
+    direction: rtl;
+}
 $t-duration: 500ms;
 $t-delay: 200ms;
 
