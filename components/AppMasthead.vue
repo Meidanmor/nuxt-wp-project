@@ -39,6 +39,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/mixins.scss";
+section.hero {
+h2{
+font-size: 70px;
+color: #fff;
+}
+}
 section.masthead {
   width: 100%;
   height: 90vh;
