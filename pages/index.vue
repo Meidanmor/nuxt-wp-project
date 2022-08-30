@@ -4,13 +4,17 @@
     <div class="posts">
       <main>
         <div class="post" v-for="post in sortedPosts" :key="post.id">
-          <h3>
-            <a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a>
+              <h3>
+        <nuxt-link :to="`blog/${post.slug}`">
+         {{ post.title.rendered }}
+</nuxt-link>
           </h3>
           <small>{{ post.date | dateformat }}</small>
           <div v-html="post.excerpt.rendered"></div>
-          <a :href="`blog/${post.slug}`" class="readmore slide">Read more ⟶</a>
-        </div>
+        <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
+          Read more ⟶
+</nuxt-link>
+</div>
       </main>
       <aside>
         <h2 class="tags-title">Tags</h2>
