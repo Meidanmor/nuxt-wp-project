@@ -14,22 +14,7 @@
 </nuxt-link>
 </div>
       </main>
-    /*  <aside>
-        <h2 class="tags-title">Tags</h2>
-        <div class="tags-list">
-          <ul>
-            <li
-              @click="updateTag(tag)"
-              v-for="tag in tags"
-              :key="tag.id"
-              :class="[tag.id === selectedTag ? activeClass : '']"
-            >
-              <a>{{ tag.name }}</a>
-              <span v-if="tag.id === selectedTag">✕</span>
-            </li>
-          </ul>
-        </div>
-      </aside>*/
+
     </div>
   </div>
 </template>
@@ -51,25 +36,13 @@ export default {
     posts() {
       return this.$store.state.posts;
     },
-  /*  tags() {
-      return this.$store.state.tags;
-    },
-    sortedPosts() {
-      if (!this.selectedTag) return this.posts;
-      return this.posts.filter(el => el.tags.includes(this.selectedTag));
-    }*/
+ 
   },
   created() {
     this.$store.dispatch("getPosts");
   },
   methods: {
-  /*  updateTag(tag) {
-      if (!this.selectedTag) {
-        this.selectedTag = tag.id;
-      } else {
-        this.selectedTag = null;
-      }
-    }*/
+ 
   }
 };
 </script>
