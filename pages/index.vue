@@ -36,7 +36,7 @@ export default {
     posts() {
       return this.$store.state.posts;
     },
- 
+    return this.posts;
   },
   created() {
     this.$store.dispatch("getPosts");
