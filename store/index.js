@@ -33,7 +33,7 @@ export const actions = {
           date,
           tags,
           content,
-          images
+          images,
         }))
 
       commit("updatePosts", posts)
