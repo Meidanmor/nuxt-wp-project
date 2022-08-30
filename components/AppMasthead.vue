@@ -59,7 +59,7 @@ a{
     text-decoration: none;
     height: 64px;
     font-size: 18px;
-    width: 200px
+    width: 200px;
     display: flex;
     max-width: 49%;
     font-family: 'ClashDisplay-Medium';
