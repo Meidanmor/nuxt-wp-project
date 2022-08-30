@@ -8,6 +8,7 @@
          <span class="text back">{{ post.title.rendered }}</span>
          <span class="text front">{{ post.title.rendered }}</span>
           </h3>
+          <img :src="post.images.large" width="500" height="500"/>
         <nuxt-link :to="`blog/${post.slug}`" class="readmore slide">
           צפייה בפרויקט
 </nuxt-link>
