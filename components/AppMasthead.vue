@@ -47,12 +47,24 @@ h2{
     letter-spacing: 0px;
     font-size: 64px;
     max-width: 700px;
+    color: #fff;
 }
 .heroBTNS {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    height: 64px;
+    font-size: 18px;
+    width: 200px
+    display: flex;
+    max-width: 49%;
+    font-family: 'ClashDisplay-Medium';
+    align-items: center;
+    justify-content: center;
 }
 }
 section.masthead {
